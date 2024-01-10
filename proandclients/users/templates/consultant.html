@@ -1,0 +1,21 @@
+<div class="container">
+    {% for consultant in consultants %}
+    <div class="consultant-card">
+        <img src="{{ consultant.image.url }}" alt="{{ consultant.name }}" class="consultant-image">
+        <div class="consultant-info">
+            <h3>{{ consultant.name }}</h3>
+            <p>{{ consultant.expertise }}</p>
+            <p>{{ consultant.language }}</p>
+            <p>Exp: {{ consultant.experience }} Years</p>
+            <p>{{ consultant.orders }} orders</p>
+            <p>₹ {{ consultant.rate }} /min</p>
+        </div>
+        <div class="consultant-action">
+            <button class="chat-button">Chat</button>
+            <!-- The wait time would be dynamic, potentially requiring JavaScript or server-side logic -->
+            <span class="wait-time">Wait ~ 6m</span>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<h1>hi</h1>

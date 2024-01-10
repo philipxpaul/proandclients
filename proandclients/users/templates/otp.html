@@ -1,0 +1,6 @@
+<form method="post" action="{% url 'verify_otp' %}">
+    {% csrf_token %}
+    <label for="otp">Enter OTP:</label>
+    <input type="text" name="otp" required>
+    <input type="submit" value="Verify OTP">
+</form>

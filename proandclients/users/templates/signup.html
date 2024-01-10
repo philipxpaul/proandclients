@@ -1,0 +1,7 @@
+<form method="post" action="{% url 'signup' %}">
+    {% csrf_token %}
+    <!-- Include other fields as needed -->
+    <label for="phone_number">Phone Number:</label>
+    <input type="text" name="phone_number" required>
+    <input type="submit" value="Sign Up">
+</form>

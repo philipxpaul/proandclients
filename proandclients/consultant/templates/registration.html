@@ -1,0 +1,6 @@
+<!-- registration.html -->
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}  <!-- This will render fields from the Consultant model -->
+    <input type="submit" value="Register">
+</form>
